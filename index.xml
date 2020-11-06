@@ -1,0 +1,161 @@
+<?xml version="1.1" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>ChocoTree</name>
+		<version>1.0</version>
+		<description>
+			<![CDATA[ TSTORY Poster 스킨을 수정한 심플한 스킨입니다. ]]>
+		</description>
+		<license>
+			<![CDATA[ MIT License ]]>
+		</license>
+	</information>
+	<author>
+		<name>Veronica</name>
+		<homepage></homepage>
+		<email>yelling95@daum.net</email>
+	</author>
+	<default>
+		<recentEntries>5</recentEntries>
+		<recentComments>4</recentComments>
+		<recentTrackbacks>4</recentTrackbacks>
+		<itemsOnGuestbook>10</itemsOnGuestbook>
+		<tagsInCloud>30</tagsInCloud>
+		<sortInCloud>3</sortInCloud>
+		<expandComment>1</expandComment>
+		<lengthOfRecentNotice>25</lengthOfRecentNotice>
+		<lengthOfRecentEntry>27</lengthOfRecentEntry>
+		<lengthOfRecentComment>30</lengthOfRecentComment>
+		<lengthOfRecentTrackback>30</lengthOfRecentTrackback>
+		<lengthOfLink>30</lengthOfLink>
+		<showListOnCategory>1</showListOnCategory>
+		<showListOnArchive>1</showListOnArchive>
+		<commentMessage>
+			<none>0</none>
+			<single>1</single>
+		</commentMessage>
+		<trackbackMessage>
+			<none>0</none>
+			<single>1</single>
+		</trackbackMessage>
+		<tree>
+			<color>000000</color>
+			<bgColor>ffffff</bgColor>
+			<activeColor>000000</activeColor>
+			<activeBgColor>eeeeee</activeBgColor>
+			<labelLength>27</labelLength>
+			<showValue>1</showValue>
+		</tree>
+		<contentWidth>860</contentWidth>
+	</default>
+	<cover>
+    <item>
+			<name>cover-home</name>
+			<label><![CDATA[ 메인홈 ]]></label>
+			<description><![CDATA[ 섬네일을 등록하시고 클릭하면 등록하신 링크로 이동할 수 있습니다. ]]></description>
+		</item>
+		<item>
+			<name>cover-slider</name>
+			<label><![CDATA[ 슬라이더 ]]></label>
+			<description><![CDATA[ 좌우 스와이프가 가능한 슬라이더입니다. ]]></description>
+		</item>
+		<item>
+			<name>cover-list</name>
+			<label><![CDATA[ 리스트 ]]></label>
+			<description><![CDATA[ 제목과 본문 내용을 주요하게 보여주는 일반 리스트입니다. ]]></description>
+		</item>
+		<item>
+			<name>cover-thumbnail-list</name>
+			<label><![CDATA[ 섬네일 리스트 ]]></label>
+			<description><![CDATA[ 섬네일을 주요하게 보여주는 리스트입니다. ]]></description>
+		</item>
+		<item>
+			<name>cover-masonry</name>
+			<label><![CDATA[벽돌 리스트]]></label>
+			<description><![CDATA[ 섬네일 크기에 따라 자동으로 배치되는 벽돌 리스트입니다. ]]></description>
+		</item>
+		<item>
+			<name>cover-gallery</name>
+			<label><![CDATA[ 갤러리 ]]></label>
+			<description><![CDATA[ 섬네일만 나열하여 보여줍니다. 마우스오버시 타이틀이 노출됩니다. ]]></description>
+		</item>
+	</cover>
+	<variables>
+		<variable>
+			<name>view-more</name>
+			<label>
+				<![CDATA[ 목록 더보기 ]]>
+			</label>
+			<type>BOOL</type>
+			<option />
+			<default>true</default>
+			<description>
+				<![CDATA[ 페이징 대신 목록 더보기를 사용합니다. ]]>
+			</description>
+		</variable>
+		<variable>
+			<name>color-type</name>
+			<label><![CDATA[ 컬러 타입 ]]></label>
+			<description><![CDATA[ 포인트 색상을 선택해주세요. ]]></description>
+			<type>SELECT</type>
+			<option><![CDATA[[{"name":"color-green","label":"기본(Green)","value":"color-green"}, {"name":"chocolate","label":"초콜릿(chocolate)","value":"color-chocolate"}]]]></option>
+			<default>color-green</default>
+		</variable>
+		<variable>
+			<name>post-type</name>
+			<label><![CDATA[ 리스트 타입 ]]></label>
+			<description><![CDATA[ 섬네일형 또는 리스트 타입을 선택합니다. ]]></description>
+			<type>SELECT</type>
+			<option><![CDATA[[{"name":"post-type-thumbnail","label":"섬네일형","value":"post-type-thumbnail"}, {"name":"post-type-text","label":"리스트형","value":"post-type-text"}]]]></option>
+			<default>post-type-thumbnail</default>
+		</variable>
+		<variable>
+			<name>footer-text</name>
+			<label><![CDATA[ 푸터 텍스트 ]]></label>
+			<type>STRING</type>
+			<option />
+			<default></default>
+			<description><![CDATA[ 푸터 텍스트를 입력해주세요. ]]></description>
+		</variable>
+		<variable>
+			<name>footer-image</name>
+			<label><![CDATA[ 푸터 이미지 ]]></label>
+			<type>IMAGE</type>
+			<option />
+			<default><![CDATA[ https://tistory2.daumcdn.net/tistory/2882984/skin/images/img_cover_footer.png ]]></default>
+			<description><![CDATA[ 푸터 이미지를 변경합니다. ]]></description>
+		</variable>
+		<variable>
+			<name>sns-pinterest</name>
+			<label><![CDATA[ Pinterest URL ]]></label>
+			<type>STRING</type>
+			<option />
+			<default></default>
+			<description><![CDATA[ Pinterest URL를 입력해주세요. ]]></description>
+		</variable>
+		<variable>
+			<name>sns-facebook</name>
+			<label><![CDATA[ Facebook URL ]]></label>
+			<type>STRING</type>
+			<option />
+			<default></default>
+			<description><![CDATA[ Facebook URL를 입력해주세요. ]]></description>
+		</variable>
+		<variable>
+			<name>sns-twitter</name>
+			<label><![CDATA[ Twitter URL ]]></label>
+			<type>STRING</type>
+			<option />
+			<default></default>
+			<description><![CDATA[ Twitter URL를 입력해주세요. ]]></description>
+		</variable>
+		<variable>
+			<name>sns-instagram</name>
+			<label><![CDATA[ Instagram URL ]]></label>
+			<type>STRING</type>
+			<option />
+			<default></default>
+			<description><![CDATA[ Instagram URL를 입력해주세요. ]]></description>
+		</variable>
+	</variables>
+</skin>
