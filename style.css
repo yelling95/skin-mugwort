@@ -386,10 +386,11 @@ hr {
 	font-size: 0.875em;
   line-height: 50px;
   background-color: #60736A;
-  color: #202623;
+  color: #000;
 }
 .btn:hover {
-  border: 1px solid #60736A;
+  color: #ebebeb;
+  border: 1px solid #ebebeb;
   background-color: transparent;
 }
 
@@ -1125,10 +1126,12 @@ hr {
 .another_category h4 {
 	margin-bottom: 28px;
 	font-weight: 400;
-	font-size: 1em !important;
+  font-size: 1em !important;
+  border-bottom: 1px solid #60736A !important;
 }
 .another_category h4 a {
   text-decoration: none;
+  border: 0;
 }
 .another_category h4 em {
 	border-bottom: 1px solid #000;
@@ -1284,6 +1287,10 @@ hr {
 }
 
 /* Entry Content */
+entry-content {
+  max-width: 860px;
+  margin: auto;
+}
 .entry-content h1 {
 	margin: 60px 0 19px;
 	font-size: 1.6875em;
@@ -1567,11 +1574,16 @@ hr {
 .comments .comment-form input[type=text],
 .comments .comment-form input[type=password],
 .comments .comment-form textarea {
-	border: 1px solid #e6e6e6;
+	border: 1px solid #ebebeb;
 	font-size: 0.9375em;
 	line-height: 1.25;
-	color: #666;
+	color: #ebebeb;
 	background-color: transparent;
+}
+.comments .comment-form textarea:focus,
+.comments .comment-form textarea:active,
+.comments .comment-form textarea:link {
+  outline: none;
 }
 .comments .comment-form input[type=text],
 .comments .comment-form input[type=password] {
@@ -1582,7 +1594,7 @@ hr {
 	box-sizing: border-box;
 }
 .comments .comment-form input::-webkit-input-placeholder,
-.comments .comment-form textarea::-webkit-input-placeholder {color: #d6d6d6;}
+.comments .comment-form textarea::-webkit-input-placeholder {color: #ebebeb;}
 .comments .comment-form textarea {
 	display: block;
 	width: 100%;
