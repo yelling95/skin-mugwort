@@ -384,8 +384,8 @@ hr {
 	width: 158px;
 	height: 50px;
 	font-size: 0.875em;
-  line-height: 50px;
   background-color: #60736A;
+  border: 1px solid #60736A;
   color: #000;
 }
 .btn:hover {
@@ -517,7 +517,9 @@ hr {
 .cover-slider ul li .btn {
 	border-color: #fff;
 	color: #fff;
-	cursor: pointer;
+  cursor: pointer;
+  background-color: transparent;
+  line-height: 50px;
 }
 .cover-slider ul li .btn:active,
 .cover-slider ul li .btn:linked,
@@ -1042,7 +1044,7 @@ hr {
 	background-color: transparent;
 }
 .pagination .selected {
-	color: #000;
+	font-weight: bold;
 }
 .pagination .prev,
 .pagination .next {
@@ -1073,9 +1075,8 @@ hr {
 
 .hgroup {
 	max-width: 860px;
-	margin: 50px auto 60px;
+	margin: 50px auto 0px;
 	padding: 0 0 20px;
-	border-bottom: 1px solid #ebebeb;
 }
 .hgroup .category {
 	display: inline-block;
@@ -1287,9 +1288,11 @@ hr {
 }
 
 /* Entry Content */
-entry-content {
-  max-width: 860px;
+.entry-content {
+  max-width: 780px;
   margin: auto;
+  background: #ebebeb;
+  padding: 40px 40px 0 40px;
 }
 .entry-content h1 {
 	margin: 60px 0 19px;
@@ -1313,7 +1316,7 @@ entry-content {
 	margin-bottom: 24px;
 	font-size: 0.9375em;
 	line-height: 1.6;
-	color: #666;
+	color: #000000;
 }
 .entry-content p img {
 	max-width: 100%;
@@ -1346,7 +1349,7 @@ entry-content {
 	padding-left: 22px;
 	font-size: 0.9375em;
 	line-height: 1.6;
-	color: #666;
+	color: #000000;
 	list-style: inherit;
 	text-indent: -22px;
 }
@@ -1358,12 +1361,12 @@ entry-content {
 	padding-left: 16px;
 	font-size: 0.9375em;
 	line-height: 1.6;
-	color: #666;
+	color: #000000;
 	text-indent: -15px;
 	list-style: inherit;
 }
 .entry-content a {
-	color: #666;
+	color: #000000;
 }
 .entry-content img.alignleft {
 	float: left;
@@ -1455,6 +1458,10 @@ entry-content {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+.entry-content .container_postbtn {
+  margin: 0 -40px;
+  background: #434F47;
 }
 
 /* Comment */
@@ -1574,7 +1581,7 @@ entry-content {
 .comments .comment-form input[type=text],
 .comments .comment-form input[type=password],
 .comments .comment-form textarea {
-	border: 1px solid #ebebeb;
+	border: 1px solid #60736A;
 	font-size: 0.9375em;
 	line-height: 1.25;
 	color: #ebebeb;
@@ -1594,7 +1601,7 @@ entry-content {
 	box-sizing: border-box;
 }
 .comments .comment-form input::-webkit-input-placeholder,
-.comments .comment-form textarea::-webkit-input-placeholder {color: #ebebeb;}
+.comments .comment-form textarea::-webkit-input-placeholder {color: #60736A;}
 .comments .comment-form textarea {
 	display: block;
 	width: 100%;
@@ -1633,7 +1640,7 @@ entry-content {
 	background-repeat: no-repeat;
 	background-position: -150px -100px;
 }
-.comments .comment-form .field .submit {
+.comments .comment-form .submit {
   float: right;
   text-align: right;
 }

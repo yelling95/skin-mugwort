@@ -483,6 +483,35 @@
 	</footer>
 </div>
 <script src="./images/script.js"></script>
+<script type="text/javascript">
+  /* 
+   * "카테고리의 다른 글" 영역의 색상 변경하기 
+   * 만든이 : http://tonks.tistory.com/100 
+   */ 
+  ( function () { 
+  
+     // 1. 새로운 “style” 태그 만들기. 
+     var css = document.createElement ( "STYLE" ); 
+           css.type = "text/css"; 
+  
+     // 2. “style” 태그에 들어갈 텍스트 만들기. 
+     var text  = ".another_category_color_gray * { color: #9b9b9b !important; } \n"; 
+           text += ".another_category_color_gray h4, \n"; 
+           text += ".another_category_color_gray h4 a { color: #9b9b9b !important; } \n";
+           text += ".another_category { background: #434F47; margin: 0 -40px; } \n";
+           text += ".another_category h4 { border-bottom: 1px solid #60736A !important; } \n";
+           text += ".another_category th a.current { border-bottom: none !important; } \n";
+           text += ".another_category th { font-size: 14px !important; } \n";
+           text += ".another_category td { font-size: 13px !important; } \n";
+  
+     // 3. 새로 만든 “style” 태그에 위의 텍스트를 집어넣기. 
+     if ( css.styleSheet )  css.styleSheet.cssText = text; 
+     else css.appendChild (  document.createTextNode ( text )  ); 
+  
+     // 4. “head” 태그의 맨 끝에, 위의 “style” 태그를 집어넣기. 
+     document.getElementsByTagName ( "HEAD" )[0].appendChild ( css ); 
+  }());
+  </script>
 </s_t3>
 </body>
 </html>
