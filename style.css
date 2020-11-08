@@ -289,16 +289,6 @@ hr {
 	text-decoration: none;
 	color: #9b9b9b;
 }
-#gnb ul li a:hover {
-  color: #ebebeb;
-}
-#gnb ul li ul li ul li a.link_sub_item{
-	color: #9b9b9b;
-}
-
-#gnb ul li a:hover {
-	color: #9b9b9b;
-}
 #gnb ul li ul {
 	margin: 22px 0 0;
 }
@@ -1809,7 +1799,7 @@ hr {
 .color-redbean .cover-list ul li a:hover .title,
 .color-redbean .post-item a:hover .title,
 .color-redbean .related-articles ul li a:hover .title {
-	color: #DEBDA2;
+	color: #857261;
 }
 .color-redbean .cover-thumbnail-list ul li .category,
 .color-redbean .cover-masonry ul li .category,
@@ -1822,7 +1812,7 @@ hr {
 .color-redbean #header .mobile-menu:before,
 .color-redbean #header .mobile-menu:after,
 .color-redbean #header .mobile-menu span {
-	background-color: #383029;
+	background-color: #000;
 }
 .color-redbean .pagination a {
   color: #857261;
@@ -1861,7 +1851,7 @@ hr {
 .color-redbean .cover-gallery ul li a:before,
 .color-redbean .post-header .list-type button,
 .color-redbean .related-articles ul li .thum:before {
-	background-image: url(./images/ico_package_redbean.png);
+	background-image: url(./images/ico_package.png);
 }
 .color-redbean .btn {
   background: #857261;
@@ -1896,6 +1886,9 @@ hr {
 .color-redbean .post-header > *{
   color: #DEBDA2;
 }
+.color-redbean #header .menu {
+  background-color: #4F3E36;
+}
 
 /* Retina Display */
 @media  only screen and (-webkit-min-device-pixel-ratio:1.5) {
@@ -1916,7 +1909,7 @@ hr {
 	.color-redbean #header .search button,
 	.color-redbean .cover-gallery ul li a:before,
 	.color-redbean .post-header .list-type button {
-		background-image: url(./images/ico_package_redbean_2x.png);
+		background-image: url(./images/ico_package_2x.png);
 		background-size: 200px auto;
 	}
 }

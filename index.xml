@@ -122,7 +122,7 @@
 			<label><![CDATA[ 푸터 이미지 ]]></label>
 			<type>IMAGE</type>
 			<option />
-			<default><![CDATA[ https://tistory2.daumcdn.net/tistory/2882984/skin/images/img_cover_footer.png ]]></default>
+			<default></default>
 			<description><![CDATA[ 푸터 이미지를 변경합니다. ]]></description>
 		</variable>
 		<variable>
