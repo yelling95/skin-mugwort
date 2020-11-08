@@ -98,8 +98,8 @@
 			<label><![CDATA[ 컬러 타입 ]]></label>
 			<description><![CDATA[ 포인트 색상을 선택해주세요. ]]></description>
 			<type>SELECT</type>
-			<option><![CDATA[[{"name":"color-gray","label":"기본(Green)","value":"color-gray"}, {"name":"chocolate","label":"초콜릿(chocolate)","value":"color-chocolate"}]]]></option>
-			<default>color-gray</default>
+			<option><![CDATA[[{"name":"color-mugwort","label":"기본(Mugwort)","value":"color-mugwort"}, {"name":"color-redbean","label":"팥(redbean)","value":"color-redbean"}]]]></option>
+			<default>color-mugwort</default>
 		</variable>
 		<variable>
 			<name>post-type</name>

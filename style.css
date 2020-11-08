@@ -590,15 +590,27 @@ hr {
   border: 1px solid rgba(130, 153, 138, 0.6);
   margin-top: 40px;
 }
-.cover-home .content .item img {
+.cover-home .content .item a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.cover-home .content .item a:hover > .detail {
+  display: flex;
+}
+.cover-home .content .item .thum {
+  width: 100%;
+  height: 100%;
 	-webkit-filter: grayscale(100%);
   filter: gray;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .cover-home .content .item .detail {
   display: none;
-}
-.cover-home .content .item .detail:hover {
-  display: flex;
+  position: absolute;
+  top: 0;
   width: 100%;
   height: 100%;
   flex-direction: column;
@@ -1733,128 +1745,156 @@ hr {
 }
 
 /* Color Type */
-.color-chocolate,
-.color-chocolate .cover-footer,
-.color-chocolate #footer {
+.color-redbean,
+.color-redbean .cover-footer,
+.color-redbean #footer {
 	background-color: #383029;
 }
-.color-chocolate #header h1 a,
-.color-chocolate #gnb ul li a,
-.color-chocolate #footer .admin,
-.color-chocolate .cover-thumbnail-list ul li a,
-.color-chocolate .cover-masonry ul li a,
-.color-chocolate .cover-list ul li a,
-.color-chocolate .cover-footer p,
-.color-chocolate .cover-footer .menu ul li a,
-.color-chocolate .post-item a,
-.color-chocolate .hgroup h1,
-.color-chocolate .hgroup .post-meta a,
-.color-chocolate .entry-content h1,
-.color-chocolate .entry-content h2,
-.color-chocolate .entry-content h3,
-.color-chocolate .entry-content h4,
-.color-chocolate .entry-content a,
-.color-chocolate .related-articles ul li a,
-.color-chocolate .comments .comment-list ul li .author-meta span,
-.color-chocolate .comments .comment-list ul li .author-meta .date a,
-.color-chocolate .pagination .selected {
+.color-redbean #header h1 a,
+.color-redbean #gnb ul li a,
+.color-redbean #footer .admin,
+.color-redbean .cover-thumbnail-list ul li a,
+.color-redbean .cover-masonry ul li a,
+.color-redbean .cover-list ul li a,
+.color-redbean .cover-footer p,
+.color-redbean .cover-footer .menu ul li a,
+.color-redbean .post-item a,
+.color-redbean .hgroup h1,
+.color-redbean .hgroup .post-meta a,
+.color-redbean .entry-content h1,
+.color-redbean .entry-content h2,
+.color-redbean .entry-content h3,
+.color-redbean .entry-content h4,
+.color-redbean .entry-content a,
+.color-redbean .related-articles ul li a,
+.color-redbean .comments .comment-list ul li .author-meta span,
+.color-redbean .comments .comment-list ul li .author-meta .date a,
+.color-redbean .pagination .selected {
 	color: #DEBDA2;
 }
-.color-chocolate #header .menu p,
-.color-chocolate #footer p,
-.color-chocolate .cover-thumbnail-list ul li .date,
-.color-chocolate .cover-masonry ul li .excerpt,
-.color-chocolate .cover-list ul li .excerpt,
-.color-chocolate .cover-list ul li .date,
-.color-chocolate .post-item .excerpt,
-.color-chocolate .post-item .date,
-.color-chocolate .hgroup .post-meta,
-.color-chocolate .another-category td,
-.color-chocolate .tags .items a,
-.color-chocolate .related-articles ul li .date,
-.color-chocolate .comments .comment-list ul li .author-meta .date,
-.color-chocolate .comments .comment-list ul li .author-meta .control a {
+.color-redbean #header .menu p,
+.color-redbean #footer p,
+.color-redbean .cover-thumbnail-list ul li .date,
+.color-redbean .cover-masonry ul li .excerpt,
+.color-redbean .cover-list ul li .excerpt,
+.color-redbean .cover-list ul li .date,
+.color-redbean .post-item .excerpt,
+.color-redbean .post-item .date,
+.color-redbean .hgroup .post-meta,
+.color-redbean .another-category td,
+.color-redbean .tags .items a,
+.color-redbean .related-articles ul li .date,
+.color-redbean .comments .comment-list ul li .author-meta .date,
+.color-redbean .comments .comment-list ul li .author-meta .control a {
 	color: #DEBDA2;
 }
-.color-chocolate .cover-thumbnail-list ul li .category,
-.color-chocolate .cover-masonry ul li .category,
-.color-chocolate .hgroup .category {
+.color-redbean .cover-thumbnail-list ul li .category,
+.color-redbean .cover-masonry ul li .category,
+.color-redbean .hgroup .category {
 	color: #DEBDA2;
 }
-.color-chocolate .entry-content p,
-.color-chocolate .entry-content table,
-.color-chocolate .entry-content ul li,
-.color-chocolate .entry-content ol li,
-.color-chocolate .another-category table,
-.color-chocolate .another-category table th a,
-.color-chocolate .comments .comment-list ul li p {
+.color-redbean .entry-content p,
+.color-redbean .entry-content table,
+.color-redbean .entry-content ul li,
+.color-redbean .entry-content ol li,
+.color-redbean .another-category table,
+.color-redbean .another-category table th a,
+.color-redbean .comments .comment-list ul li p {
 	color: #DEBDA2;
 }
-.color-chocolate #gnb ul li a:hover,
-.color-chocolate .cover-footer .menu ul li a:hover,
-.color-chocolate .cover-thumbnail-list ul li a:hover .title,
-.color-chocolate .cover-masonry ul li a:hover .title,
-.color-chocolate .cover-list ul li a:hover .title,
-.color-chocolate .post-item a:hover .title,
-.color-chocolate .related-articles ul li a:hover .title {
+.color-redbean #gnb ul li a:hover,
+.color-redbean .cover-footer .menu ul li a:hover,
+.color-redbean .cover-thumbnail-list ul li a:hover .title,
+.color-redbean .cover-masonry ul li a:hover .title,
+.color-redbean .cover-list ul li a:hover .title,
+.color-redbean .post-item a:hover .title,
+.color-redbean .related-articles ul li a:hover .title {
 	color: #DEBDA2;
 }
-.color-chocolate .cover-thumbnail-list ul li .category,
-.color-chocolate .cover-masonry ul li .category,
-.color-chocolate .hgroup .category {
+.color-redbean .cover-thumbnail-list ul li .category,
+.color-redbean .cover-masonry ul li .category,
+.color-redbean .hgroup .category {
 	border-color: #383029;
 }
-.color-chocolate .entry-content ul li:before {
+.color-redbean .entry-content ul li:before {
 	background-color: #383029;
 }
-.color-chocolate #header .mobile-menu:before,
-.color-chocolate #header .mobile-menu:after,
-.color-chocolate #header .mobile-menu span {
+.color-redbean #header .mobile-menu:before,
+.color-redbean #header .mobile-menu:after,
+.color-redbean #header .mobile-menu span {
 	background-color: #383029;
 }
-.color-chocolate .pagination a:hover,
-.color-chocolate #header .search:hover:before {
+.color-redbean .pagination a {
+  color: #857261;
+}
+.color-redbean .pagination a:hover,
+.color-redbean #header .search:hover:before {
 	background-color: #383029;
 }
-.color-chocolate .btn,
-.color-chocolate .cover-thumbnail-list
-.color-chocolate .cover-masonry
-.color-chocolate .cover-list
-.color-chocolate .cover-gallery,
-.color-chocolate .cover-list ul li,
-.color-chocolate .post-item,
-.color-chocolate .hgroup,
-.color-chocolate .entry-content table,
-.color-chocolate .entry-content table thead th,
-.color-chocolate .entry-content table tbody td,
-.color-chocolate .entry-content blockquote,
-.color-chocolate .comments,
-.color-chocolate .comments .comment-list ul li,
-.color-chocolate .comments .comment-form input[type=text],
-.color-chocolate .comments .comment-form input[type=password],
-.color-chocolate .comments .comment-form textarea,
-.color-chocolate .comments .comment-form .field .secret label:before,
-.color-chocolate .pagination .prev,
-.color-chocolate .pagination .next,
-.color-chocolate .pagination a {
-	border-color: #e7e2e1;
+.color-redbean .btn,
+.color-redbean .cover-thumbnail-list
+.color-redbean .cover-masonry
+.color-redbean .cover-list
+.color-redbean .cover-gallery,
+.color-redbean .cover-list ul li,
+.color-redbean .post-item,
+.color-redbean .hgroup,
+.color-redbean .entry-content table,
+.color-redbean .entry-content table thead th,
+.color-redbean .entry-content table tbody td,
+.color-redbean .entry-content blockquote,
+.color-redbean .comments,
+.color-redbean .comments .comment-list ul li,
+.color-redbean .comments .comment-form input[type=text],
+.color-redbean .comments .comment-form input[type=password],
+.color-redbean .comments .comment-form textarea,
+.color-redbean .comments .comment-form .field .secret label:before,
+.color-redbean .pagination .prev,
+.color-redbean .pagination .next,
+.color-redbean .pagination a {
+	border-color: #857261;
 }
-.color-chocolate .social-link a,
-.color-chocolate #header .search button,
-.color-chocolate #header .search:before,
-.color-chocolate .cover-thumbnail-list ul li .thum:before,
-.color-chocolate .cover-gallery ul li a:before,
-.color-chocolate .post-header .list-type button,
-.color-chocolate .related-articles ul li .thum:before {
-	background-image: url(./images/ico_package_chocolate.png);
+.color-redbean .social-link a,
+.color-redbean #header .search button,
+.color-redbean #header .search:before,
+.color-redbean .cover-thumbnail-list ul li .thum:before,
+.color-redbean .cover-gallery ul li a:before,
+.color-redbean .post-header .list-type button,
+.color-redbean .related-articles ul li .thum:before {
+	background-image: url(./images/ico_package_redbean.png);
 }
-.color-chocolate .btn:hover,
-.color-chocolate .pagination .prev:hover,
-.color-chocolate .pagination .next:hover {
-	border-color: #4d4d4d;
+.color-redbean .btn {
+  background: #857261;
 }
-.color-chocolate #header .search.on {
+.color-redbean .btn:hover {
+  background: transparent;
+}
+.color-redbean .btn:hover,
+.color-redbean .pagination .prev:hover,
+.color-redbean .pagination .next:hover {
+  border-color: #857261;
+}
+.color-redbean #header .search.on {
 	border-color: #4e2e28;
+}
+.color-redbean .container_postbtn,
+.color-redbean .another_category {
+  background: #383029;
+}
+.color-redbean .comments .comment-form input::-webkit-input-placeholder,
+.color-redbean .comments .comment-form textarea::-webkit-input-placeholder {color: #DEBDA2;}
+.color-redbean .comments .comment-list ul li p {
+  background: #857261;
+  color: #000;
+}
+.color-redbean .comments .comment-list ul li .author-meta a {
+  color: #DEBDA2;
+}
+.color-redbean .comments .comment-list ul li .control a {
+  color: #DEBDA2;
+}
+.color-redbean .post-header > *{
+  color: #DEBDA2;
 }
 
 /* Retina Display */
@@ -1872,11 +1912,11 @@ hr {
 		background-image: url(./images/ico_package_2x.png);
 		background-size: 200px auto;
 	}
-	.color-chocolate .social-link a,
-	.color-chocolate #header .search button,
-	.color-chocolate .cover-gallery ul li a:before,
-	.color-chocolate .post-header .list-type button {
-		background-image: url(./images/ico_package_chocolate_2x.png);
+	.color-redbean .social-link a,
+	.color-redbean #header .search button,
+	.color-redbean .cover-gallery ul li a:before,
+	.color-redbean .post-header .list-type button {
+		background-image: url(./images/ico_package_redbean_2x.png);
 		background-size: 200px auto;
 	}
 }

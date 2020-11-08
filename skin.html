@@ -49,11 +49,12 @@
 										<s_cover_item>
 											<div class="item">
 												<a href="[##_cover_item_url_##]">
-													<span class="thum">
-														<s_cover_item_thumbnail>
-                              <img src="//i1.daumcdn.net/thumb/R600x0/?fname=[##_cover_item_thumbnail_##]" alt="">
-                            </s_cover_item_thumbnail>
-                          </span>
+                          <s_cover_item_thumbnail>
+                            <div
+                              class="thum"
+                              style="background-image: url(//i1.daumcdn.net/thumb/R600x0/?fname=[##_cover_item_thumbnail_##]);"
+                            ></div>
+                          </s_cover_item_thumbnail>
                           <div class="detail">
                             <s_cover_item_article_info>
                               <span class="category">[##_cover_item_category_##]</span>
@@ -501,10 +502,11 @@
            text += ".another_category_color_gray h4, \n"; 
            text += ".another_category_color_gray h4 a { color: #9b9b9b !important; } \n";
            text += ".another_category { background: #434F47; margin: 0 -40px; } \n";
-           text += ".another_category h4 { border-bottom: 1px solid #60736A !important; } \n";
+           text += ".another_category h4 { border-bottom: 1px solid #9b9b9b !important; } \n";
            text += ".another_category th a.current { border-bottom: none !important; } \n";
            text += ".another_category th { font-size: 14px !important; } \n";
            text += ".another_category td { font-size: 13px !important; } \n";
+           text += ".container_postbtn .btn_post .txt_like { color: rgba(185,185,185,0.5) !important; } \n";
   
      // 3. 새로 만든 “style” 태그에 위의 텍스트를 집어넣기. 
      if ( css.styleSheet )  css.styleSheet.cssText = text; 
