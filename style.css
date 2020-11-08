@@ -289,6 +289,9 @@ hr {
 	text-decoration: none;
 	color: #9b9b9b;
 }
+#gnb ul li a:hover {
+  color: #ebebeb;
+}
 #gnb ul li ul li ul li a.link_sub_item{
 	color: #9b9b9b;
 }
@@ -324,7 +327,7 @@ hr {
 	margin: 0 auto;
 }
 #content>.inner {
-	max-width: 1400px;
+	max-width: 860px;
 }
 
 #content .inner:after {
@@ -342,7 +345,7 @@ hr {
 #footer p {
 	text-align: center;
 	font-size: 0.75em;
-	color: #202623;
+	color: #9b9b9b;
 }
 #footer p a {
 	text-decoration: none;
@@ -569,7 +572,6 @@ hr {
 	padding: 50px 10px 40px 10px;
 }
 .cover-home h2 {
-  margin-bottom: 30px;
   font-size: 1em;
   color: #9b9b9b;
   text-align: center;
@@ -578,25 +580,24 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: calc(100vw - 20px);
-  height: 100vh;
+  height: 100%;
 }
 .cover-home .content .item {
   display: flex;
   width: 260px;
   height: 400px;
-  margin-right: 20px;
   background-color: #202623;
-  border: 1px solid 1px solid rgba(130, 153, 138, 0.6);
+  border: 1px solid rgba(130, 153, 138, 0.6);
+  margin-top: 40px;
 }
 .cover-home .content .item img {
 	-webkit-filter: grayscale(100%);
   filter: gray;
 }
-.cover-home .content .item a {
+.cover-home .content .item .detail {
   display: none;
 }
-.cover-home .content .item a:hover {
+.cover-home .content .item .detail:hover {
   display: flex;
   width: 100%;
   height: 100%;
@@ -608,13 +609,13 @@ hr {
   text-align: center;
   background-color: rgba(130, 153, 138, 0.6);
 }
-.cover-home .content .item a > * {
+.cover-home .content .item .detail > * {
   padding: 0 20px;
 }
-.cover-home .content .item a .title {
+.cover-home .content .item .detail .title {
   line-height: 2;
 }
-.cover-home .content .item a .excerpt {
+.cover-home .content .item .detail .excerpt {
   font-size: 0.7em;
   color: #202623;
   line-height: 1.7;
@@ -622,11 +623,13 @@ hr {
 
 
 .cover-masonry {
-	padding: 50px 0 50px;
+	padding: 50px 10px;
 }
 .cover-masonry h2 {
 	margin-bottom: 30px;
-	font-size: 1em;
+  font-size: 1em;
+  color: #9b9b9b;
+  text-align: center;
 }
 .cover-masonry ul {
 	display: inline-block;
@@ -897,7 +900,7 @@ hr {
 .post-header {
 	position: relative;
 	overflow: hidden;
-	max-width: 1400px;
+	max-width: 860px;
 	margin: 0 auto 30px;
 	padding: 57px 0 15px;
 }
@@ -1052,12 +1055,9 @@ hr {
 	height: 50px;
 	background-image: url(./images/ico_package.png);
   background-repeat: no-repeat;
-  background-color: #60736A;
-	border: 1px solid #dcdcdc;
 	text-indent: -999em;
 	vertical-align: middle;
   box-sizing: border-box;
-  border-radius: 50%;
 }
 .pagination .prev {
 	background-position: -50px 0;
@@ -1071,7 +1071,7 @@ hr {
 	border-color: #4d4d4d;
 }
 .pagination .no-more-prev,
-.pagination .no-more-next {display: none;}
+.pagination .no-more-next { opacity: 0.4; }
 
 .hgroup {
 	max-width: 860px;
@@ -1482,7 +1482,6 @@ hr {
 }
 .comments .comment-list ul li {
 	padding: 30px 0 25px;
-	border-top: 1px solid #e6e6e6;
 	position: relative;
 	min-height: 48px;
 }
@@ -1563,14 +1562,21 @@ hr {
 	margin:0 2px;
 	text-decoration: none;
 	font-size: 12px;
-	color: #999;
+	color: #9b9b9b;
+}
+.comments .comment-list ul li .control a:hover {
+  color: #ebebeb;
 }
 .comments .comment-list ul li p {
 	position:relative;
 	margin: 29px 0 0 60px;
 	font-size: 0.875em;
 	line-height: 1.5714;
-	color: #666;
+  color: #000;
+  background: #60736A;
+  padding: 20px 10px;
+  clear: right;
+  border-radius: 4px;
 }
 .comments .comment-form .field {
 	position: relative;
@@ -1859,8 +1865,8 @@ hr {
 	.cover-slider .prev,
 	.cover-slider .next,
 	.cover-gallery ul li a:before,
-	.post-header .list-type button,
-	.pagination .prev,
+  .post-header .list-type button,
+  .pagination .prev,
 	.pagination .next,
 	.comments .comment-form .field .secret input[type=checkbox]:checked+label:before {
 		background-image: url(./images/ico_package_2x.png);
@@ -2002,7 +2008,10 @@ hr {
 		top: auto;
 		right: 0;
 		bottom: 0;
-	}
+  }
+  .cover-home .content .item {
+    width: 100%;
+  }
 	.cover-masonry {
 		padding: 60px 18px 81px;
 	}
@@ -2140,7 +2149,7 @@ hr {
 	.comments .comment-list {
 		margin-bottom:10px;
 		margin-top:10px;
-		border-top: 1px solid #e6e6e6;
+		border-top: 1px solid #9b9b9b;
 	}
 	.comments .comment-list ul li {
 		padding-bottom:0;
@@ -2199,7 +2208,8 @@ hr {
 		top: auto;
 		right: auto;
 		display: block;
-		margin: 9px 0 18px -2px;
+    margin: 9px 0 18px -2px;
+    float: right;
 	}
 	.comments .comment-list ul li ul li .control {
 		top: auto;
