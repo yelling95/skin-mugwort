@@ -14,8 +14,8 @@
 </div>
 <div id="wrap">
 	<header id="header">
+		<button type="button" class="mobile-menu"><span></span></button>
 		<h1><a href="[##_blog_link_##]">[##_title_##]</a></h1>
-		<button type="button" class="mobile-menu"><span>메뉴</span></button>
 		<div class="menu">
 			<nav id="gnb">
 				[##_category_list_##]
@@ -28,10 +28,10 @@
 			</div>
 			<p class="copyright">[##_var_footer-text_##]</p>
 		</div>
-		<div class="search">
+		<div class="search" title="검색하기">
 			<s_search>
 					<input type="text" name="[##_search_name_##]" value="[##_search_text_##]" placeholder="검색내용을 입력하세요." onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
-					<button type="submit" onclick="[##_search_onclick_submit_##]">검색</button>
+					<!--<button type="submit" onclick="[##_search_onclick_submit_##]">검색</button>-->
 				</s_search>
 		</div>
 	</header>
@@ -218,11 +218,12 @@
 
 			<s_list>
 				<div class="post-header">
-					<span><h1>[##_list_conform_##]</h1></span>
-					<span style="padding-left: 5px; font-weight: bold;">([##_list_count_##])</h</span>
+				  <!-- [##_list_count_##] -->
+					<span></span>
+					<span>[##_list_conform_##]</span>
 					<div class="list-type">
-						<button type="button" class="thum">썸네일형</button>
-						<button type="button" class="list">리스트형</button>
+						<button type="button" class="thum">thumbnail</button>
+						<button type="button" class="list">list</button>
 					</div>
 				</div>
 			</s_list>
@@ -232,8 +233,8 @@
 					<s_index_article_rep>
 						<div class="post-item">
 							<a href="[##_article_rep_link_##]">
-								<span class="thum"></span>
 								<span class="title">[##_article_rep_title_##]</span>
+								<span class="thum"></span>
 								<span class="excerpt protected">보호되어 있는 글입니다.</span>
 							</a>
 						</div>
@@ -265,12 +266,12 @@
 					<s_index_article_rep>
 						<div class="post-item">
 							<a href="[##_article_rep_link_##]">
+								<span class="title">[##_article_rep_title_##]</span>
 								<span class="thum">
 									<s_article_rep_thumbnail>
 										<img src="//i1.daumcdn.net/thumb/C264x200/?fname=[##_article_rep_thumbnail_raw_url_##]" alt="">
 									</s_article_rep_thumbnail>
 								</span>
-								<span class="title">[##_article_rep_title_##]</span>
 								<span class="excerpt">[##_article_rep_summary_##]</span>
 							</a>
 						</div>
@@ -371,7 +372,7 @@
 												</s_rp_guest>
 												<div class="secret">
 													<input type="checkbox" name="[##_rp_input_is_secret_##]" id="secret">
-													<label for="secret" tabindex="0">Secret</label>
+													<label for="secret" tabindex="0">비밀</label>
 												</div>
 											</div>
 										</s_rp_member>
@@ -390,7 +391,7 @@
 
 			<s_tag>
 				<div class="hgroup">
-					<h1>태그</h1>
+					<h1>~ Tag ~</h1>
 				</div>
 				<div class="tags">
 					<div class="items">
@@ -404,7 +405,7 @@
 			<s_guest>
 			<div class="guest_inner">
 				<div class="hgroup">
-					<h1>방명록</h1>
+					<h1>~ Guest Book ~</h1>
 				</div>
 				<div class="comments">
 					<s_guest_input_form>
